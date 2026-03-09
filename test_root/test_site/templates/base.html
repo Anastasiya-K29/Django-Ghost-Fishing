@@ -5,10 +5,25 @@
         <meta charset="UTF-8">
         <title>{{ title }}</title>
         <link href="{% static 'main.css' %}" rel="stylesheet" type="text/css">
+        <link href="{% static 'favicon.ico' %}" rel="icon" type="image/x-icon">
     </head>
     <body>
     <div id="wrapper">
         <header id="header">
+            <div id="logo">
+                <img src="{% static 'logo.png' %}" alt="Ghost Nets" height="40">
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="/timelines">Timelines</a></li>
+                    <li><a href="/ethics">Ethics</a></li>
+                    <li><a href="/regulations">Regulations</a></li>
+                    <li><a href="/news">News</a></li>
+                    <li><a href="/references">References</a></li>
+                    <li><a href="/extra-info">Extra Information</a></li>
+                </ul>
+            </nav>
         </header>
         <section id="main">
             <h1>{{ title }}</h1>

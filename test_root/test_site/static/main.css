@@ -15,15 +15,61 @@ body {
     margin-right: auto;
 }
 
+/* NAVBAR */
 #header {
     width: 100%;
-    height: 80px;
-    background-color: #FFFFFF;
-    border-radius: 12px;
-    border: 2px solid #BBBBBB;
-    margin-bottom: 15px;
+    background-color: #122C4F;
     box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    height: 55px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    transition: top 0.3s ease;
 }
+
+#header.hidden {
+    top: -70px;
+}
+
+#logo {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #F7F8F0;
+    letter-spacing: 1px;
+}
+
+#nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+#nav ul li a {
+    text-decoration: none;
+    color: #F7F8F0;
+    font-size: 0.95em;
+    letter-spacing: 0.5px;
+    font-weight: bold;
+}
+
+#nav ul li a:hover {
+    color: #7aaace;
+}
+
+/* push content down so it doesn't hide behind fixed navbar */
+body {
+    padding-top: 65px;
+}
+
+/* NAVBAR END */
 
 #main {
     width: 100%;
