@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+
+{% block title %}Ghost Gear Calculator{% endblock title %}
+
+{% block main_content %}
+
+<h1>Ghost Gear Age Calculator</h1>
+<p>You have discovered our hidden page! Enter different values in the URL to explore different results.</p>
+<p>URL format: <strong>/material/weight/years/</strong></p>
+<p>Material codes: <strong>1 = Nylon, 2 = Polyester, 3 = Metal</strong></p>
+
+<div class="gear-result">
+    <h2>Your Ghost Gear Report</h2>
+
+    <div class="gear-stat">
+        <h3>Material Type</h3>
+        <p>{{ material_name }} (Code: {{ material }})</p>
+    </div>
+
+    <div class="gear-stat">
+        <h3>Weight of Gear</h3>
+        <p>{{ weight }} kg</p>
+    </div>
+
+    <div class="gear-stat">
+        <h3>Years Abandoned</h3>
+        <p>{{ years }} years</p>
+    </div>
+
+    <div class="gear-stat">
+        <h3>Maximum Active Lifespan</h3>
+        <p>{{ base_years }} years for {{ material_name }}</p>
+    </div>
+
+    <div class="gear-stat">
+        <h3>Remaining Active Years</h3>
+        <p>This gear will remain active for another <strong>{{ remaining_years }} years</strong></p>
+    </div>
+
+    <div class="gear-stat">
+        <h3>Estimated Animals Trapped Per Year</h3>
+        <p>{{ animals_per_year }} marine animals</p>
+    </div>
+
+    <div class="gear-stat">
+        <h3>Total Estimated Animals Trapped So Far</h3>
+        <p><strong>{{ total_animals }} marine animals</strong> in {{ years }} years</p>
+    </div>
+
+    <div class="gear-stat damage-{{ damage_colour }}">
+        <h3>Overall Damage Level</h3>
+        <p class="damage-level">{{ damage_level }}</p>
+    </div>
+
+</div>
+
+<div class="gear-info">
+    <h2>Try These Examples</h2>
+    <ul>
+        <li><a href="/1/50/10/">/1/50/10/</a> — 50kg Nylon net, abandoned 10 years ago</li>
+        <li><a href="/2/100/50/">/2/100/50/</a> — 100kg Polyester net, abandoned 50 years ago</li>
+        <li><a href="/3/200/100/">/3/200/100/</a> — 200kg Metal gear, abandoned 100 years ago</li>
+    </ul>
+</div>
+
+{% endblock main_content %}
