@@ -9,7 +9,7 @@ def index(request, pagename=''):
         'content': pg.content,
         'page_list': Page.objects.all(),
     }
-    return render(request, 'pages/page.html', context)
+    return render(request, 'base.html', context)
 
 def ghost_gear(request, material, weight, years):
     
