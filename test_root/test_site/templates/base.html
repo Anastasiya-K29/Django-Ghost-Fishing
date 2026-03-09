@@ -1,0 +1,22 @@
+{% load static %}
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{{ title }}</title>
+        <link href="{% static 'main.css' %}" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+    <div id="wrapper">
+        <header id="header">
+        </header>
+        <section id="main">
+            <h1>{{ title }}</h1>
+            {% autoescape off %}
+            <p>{{ content }}</p>
+            {% endautoescape %}
+        </section>
+        <footer id="footer">Copyright &copy; 2026</footer>
+    </div>
+    </body>
+</html>

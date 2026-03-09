@@ -1,5 +1,11 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+from . models import Page
 
-def index(request):
-    return HttpResponse("Test Site")
+def index(request, pagename=''):
+    pagename = '/' + pagename
+    pg = Page.objects.get(permalink=pagename)
+    context = {
+        'title': pg.title,
+        'content': pg.content
+    }
+    return render(request, 'base.html', context)
