@@ -26,7 +26,17 @@ A hidden page exists within the website.
 To access it, enter a URL containing three numbers separated by forward slashes.
 
 Example:
-http://localhost:8000/5/10/3/
+http://localhost:8000/<material>/<weight>/<years>/
+
+Material codes:
+- 1 = Nylon (active for up to 600 years)
+- 2 = Polyester (active for up to 400 years)
+- 3 = Metal (active for up to 200 years)
+
+Weight = weight of the gear in kg
+Years = number of years the gear has been abandoned
+
+The page calculates the estimated number of marine animals trapped and displays an overall damage level based on the total impact of the gear.
 
 ## Running the Project
 1. Clone the repository
