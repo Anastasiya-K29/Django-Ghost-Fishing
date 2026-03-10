@@ -36,13 +36,13 @@ def ghost_gear(request, material, weight, years):
     total_animals = animals_per_year * years
 
     # Calculate damage level
-    if remaining_years > 300:
+    if total_animals >= 10000:
         damage_level = 'Catastrophic'
         damage_colour = 'red'
-    elif remaining_years > 100:
+    elif total_animals >= 1000:
         damage_level = 'Severe'
         damage_colour = 'orange'
-    elif remaining_years > 50:
+    elif total_animals >= 100:
         damage_level = 'Moderate'
         damage_colour = 'yellow'
     else:
