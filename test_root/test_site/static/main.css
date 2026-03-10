@@ -16,7 +16,7 @@ body {
     padding: 20px;
 }
 
-/* NAVBAR */
+
 #header {
     width: 100%;
     background-color: #122C4F;
@@ -65,8 +65,6 @@ body {
     color: #9CD5FF;
 }
 
-/* NAVBAR END */
-
 #main {
     width: 100%;
     background-color: #FFFFFF;
@@ -92,146 +90,13 @@ body {
     margin-right: auto;
 }
 
-/* HOME PAGE */
-.hero {
-    background-color: #122C4F;
-    color: #F7F8F0;
-    padding: 40px;
-    border-radius: 12px;
-    margin-bottom: 25px;
-    text-align: center;
-}
-
-.hero h1 {
-    font-size: 1.8em;
-    margin-bottom: 15px;
-    color: #F7F8F0;
-}
-
-.hero-text {
-    font-size: 1.1em;
+#nav-text h2 {
     color: #9CD5FF;
-    line-height: 1.7;
+    font-size: 1.5em;
+    margin: 0;
+    letter-spacing: 1px;
 }
 
-.info-section {
-    background-color: #F7F8F0;
-    border-radius: 12px;
-    border: 1px solid #7AAACE;
-    padding: 25px;
-    margin-bottom: 20px;
-}
-
-.info-section h2 {
-    color: #122C4F;
-    font-size: 1.3em;
-    margin-bottom: 10px;
-    border-bottom: 2px solid #9CD5FF;
-    padding-bottom: 8px;
-}
-
-.info-section p {
-    line-height: 1.8;
-    color: #355872;
-}
-
-/* NEWS PAGE */
-.news-controls {
-    background-color: #9CD5FF;
-    padding: 15px;
-    border-radius: 8px;
-    margin-bottom: 25px;
-    border: 1px solid #7AAACE;
-}
-
-.search-input {
-    padding: 8px 12px;
-    border: 1px solid #7AAACE;
-    border-radius: 6px;
-    font-size: 0.9em;
-    width: 250px;
-    margin-right: 10px;
-}
-
-.year-select {
-    padding: 8px 12px;
-    border: 1px solid #7AAACE;
-    border-radius: 6px;
-    font-size: 0.9em;
-    margin-right: 10px;
-}
-
-.search-btn {
-    padding: 8px 16px;
-    background-color: #355872;
-    color: #F7F8F0;
-    border: none;
-    border-radius: 6px;
-    font-size: 0.9em;
-    cursor: pointer;
-    margin-right: 5px;
-}
-
-.search-btn:hover {
-    background-color: #122C4F;
-}
-
-.clear-btn {
-    padding: 8px 16px;
-    background-color: #7AAACE;
-    color: #F7F8F0;
-    border-radius: 6px;
-    font-size: 0.9em;
-    text-decoration: none;
-}
-
-.clear-btn:hover {
-    background-color: #355872;
-}
-
-.news-article {
-    padding: 20px;
-    margin-bottom: 20px;
-    background-color: #F7F8F0;
-    border-radius: 8px;
-    border: 1px solid #7AAACE;
-}
-
-.news-article h3 {
-    color: #122C4F;
-    font-size: 1.3em;
-    margin-bottom: 5px;
-}
-
-.news-date {
-    font-size: 0.85em;
-    color: #355872;
-    margin-bottom: 10px;
-    font-style: italic;
-}
-
-.news-article p {
-    line-height: 1.7;
-    color: #355872;
-}
-
-.results-info {
-    font-size: 0.9em;
-    color: #355872;
-    margin-bottom: 15px;
-    padding: 8px;
-    background-color: #9CD5FF;
-    border-radius: 6px;
-}
-
-.no-results {
-    text-align: center;
-    color: #7AAACE;
-    padding: 30px;
-    font-style: italic;
-}
-
-/* GHOST GEAR CALCULATOR */
 .gear-result {
     background-color: #122C4F;
     border-radius: 12px;
@@ -320,4 +185,23 @@ body {
 .gear-info li a:hover {
     color: #122C4F;
     text-decoration: underline;
+}
+
+.error-layout {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.error-text {
+    flex: 1;
+}
+
+.error-image {
+    flex: 1;
+    text-align: center;
+}
+
+.error-image img {
+    width: 300px;
 }

@@ -13,15 +13,17 @@
                 <div id="logo">
                     <img src="{% static 'logo.png' %}" alt="Ghost Nets" height="40">
                 </div>
+                <div id="nav-text">
+                    <h2>GHOST FISHING</h2>
+                </div>
                 <nav id="nav">
                     <ul>
-                        <li><a href="/home">Home</a></li>
+                        <li><a href="/">Home</a></li>
                         <li><a href="/timelines">Timelines</a></li>
                         <li><a href="/ethics">Ethics</a></li>
                         <li><a href="/regulations">Regulations</a></li>
                         <li><a href="/news">News</a></li>
                         <li><a href="/references">References</a></li>
-                        <li><a href="/extra-info">Extra Information</a></li>
                         <li><a href="/request-info">Request Information</a></li>
                     </ul>
                 </nav>
@@ -37,7 +39,7 @@
                         {% endautoescape %}
                     </div>
 
-                    {% if permalink != '/home' and permalink != '/request-info' %}
+                    {% if permalink != '/' and permalink != '/request-info' %}
                         {% if authors %}
                             <div class="meta-section">
                                 <h3>Authors</h3>
@@ -55,7 +57,7 @@
                 {% endblock main_content %}
             </section>
 
-            <footer id="footer">Copyright &copy; 2026</footer>
+            <footer id="footer">Ghost Fishing Group A108 &copy; 2026</footer>
         </div>
     </body>
 </html>

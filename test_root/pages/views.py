@@ -16,26 +16,20 @@ def index(request, pagename=''):
 
 def ghost_gear(request, material, weight, years):
     
-    # Material types
     materials = {
         1: ('Nylon', 600),
         2: ('Polyester', 400),
         3: ('Metal', 200),
     }
 
-    # Default to nylon if invalid material number entered
     material_name, base_years = materials.get(material, ('Unknown Material', 500))
 
-    # Calculate how long gear will remain active
     remaining_years = max(0, base_years - years)
 
-    # Calculate estimated animals trapped per year based on weight
     animals_per_year = weight * 12
 
-    # Total estimated animals trapped so far
     total_animals = animals_per_year * years
 
-    # Calculate damage level
     if total_animals >= 10000:
         damage_level = 'Catastrophic'
         damage_colour = 'red'
