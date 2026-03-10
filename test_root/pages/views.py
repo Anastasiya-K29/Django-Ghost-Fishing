@@ -8,6 +8,9 @@ def index(request, pagename=''):
         'title': pg.title,
         'content': pg.content,
         'page_list': Page.objects.all(),
+        'authors': pg.authors,
+        'references': pg.references,
+        'permalink': pg.permalink,
     }
     return render(request, 'base.html', context)
 
@@ -60,3 +63,22 @@ def ghost_gear(request, material, weight, years):
         'base_years': base_years,
     }
     return render(request, 'pages/ghost_gear.html', context)
+
+def request_info(request):
+    submitted = False
+
+    if request.method == "POST":
+        name = request.POST.get("name")
+        email = request.POST.get("email")
+        topic = request.POST.get("topic")
+        message = request.POST.get("message")
+
+        submitted = True
+
+    context = {
+        "title": "Request Further Information",
+        "submitted": submitted,
+        "page_list": Page.objects.all(),
+    }
+
+    return render(request, "pages/request_info.html", context)
