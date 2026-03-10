@@ -70,6 +70,32 @@ Within a particular ecosystem, there may be a common way of installing things, s
 ## Usage
 Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
 
+## Hidden Treasure Page
+We have a hidden Ghost Gear Age Calculator page!
+
+To access it, use the following URL format:
+```
+http://localhost:8000/<material>/<weight>/<years>/
+```
+
+Material codes:
+- 1 = Nylon (active for up to 600 years)
+- 2 = Polyester (active for up to 400 years)
+- 3 = Metal (active for up to 200 years)
+
+Example URLs:
+- http://localhost:8000/1/50/10/ — 50kg Nylon net, abandoned 10 years ago
+- http://localhost:8000/2/100/50/ — 100kg Polyester net, abandoned 50 years ago
+- http://localhost:8000/3/200/100/ — 200kg Metal gear, abandoned 100 years ago
+
+## Running the Project
+1. Clone the repository
+2. Navigate to the test_root directory
+3. Run migrations: `python manage.py migrate`
+4. Create a superuser: `python manage.py createsuperuser`
+5. Run the server: `python manage.py runserver`
+6. Visit http://127.0.0.1:8000/
+
 ## Support
 Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
 
