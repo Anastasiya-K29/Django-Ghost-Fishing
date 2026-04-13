@@ -53,4 +53,4 @@ http://127.0.0.1:8000/
 =======
 # Django-Ghost-Fishing
 Django based group project on Ghost Fishing
->>>>>>> cc8494d54d3fce7be056425dc71027bc4dc24b89
+
