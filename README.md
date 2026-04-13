@@ -26,7 +26,7 @@ A hidden page exists within the website.
 To access it, enter a URL containing three numbers separated by forward slashes.
 
 Example:
-http://localhost:8000/<material>/<weight>/<years>/
+http://localhost:8000/'material'/'weight'/'years'/
 
 Material codes:
 - 1 = Nylon (active for up to 600 years)
