@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Ghost Nets Awareness Website
 
 ## Project Overview
@@ -49,8 +50,7 @@ python manage.py runserver
 
 http://127.0.0.1:8000/
 
-## Contributors
-- Jamie – Ethics, Request Information
-- Farah – Regulations
-- Hana – Timeline & History
-- Anastasiya - Home
+=======
+# Django-Ghost-Fishing
+Django based group project on Ghost Fishing
+>>>>>>> cc8494d54d3fce7be056425dc71027bc4dc24b89
