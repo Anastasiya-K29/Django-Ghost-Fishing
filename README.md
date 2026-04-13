@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Ghost Nets Awareness Website
 
 ## Project Overview
@@ -49,8 +48,3 @@ python manage.py runserver
 4. Open:
 
 http://127.0.0.1:8000/
-
-=======
-# Django-Ghost-Fishing
-Django based group project on Ghost Fishing
-
